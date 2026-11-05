@@ -1,0 +1,21 @@
+name: 申请使用 Medical Research PPT
+description: 申请访问私有技能仓库，由维护者人工审核
+title: '访问申请：'
+body:
+  - type: markdown
+    attributes:
+      value: '申请内容公开可见。请勿填写密码、授权码、患者信息、未发表数据或其他敏感信息。GitHub 会自动显示您的账号。'
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 使用目的
+      description: 请简要介绍计划如何使用这个技能。
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledge
+    attributes:
+      label: 确认
+      options:
+        - label: 我了解申请内容公开可见，并且申请须由维护者审核。
+          required: true
